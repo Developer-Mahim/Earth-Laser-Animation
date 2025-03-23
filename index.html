@@ -80,7 +80,7 @@
     <script>
         function updateAnimation() {
             let points = parseInt(document.getElementById("points").value) || 0;
-            let laserHeight = Math.min(points * 20, 400);
+            let laserHeight = Math.min(points * 100, 400);
             
             gsap.to(".laser", { height: laserHeight, duration: 0.5 });
             
